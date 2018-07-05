@@ -1,7 +1,7 @@
-package com.cds.cdsfrontend;
+package com.spring.springfrontend;
 
-import com.cds.cdsfrontend.models.Reservation;
-import com.cds.cdsfrontend.repositories.ReservationRepository;
+import com.spring.springfrontend.models.Reservation;
+import com.spring.springfrontend.repositories.ReservationRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class CdsFrontendApplication {
+public class SpringFrontendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CdsFrontendApplication.class, args);
+		SpringApplication.run(SpringFrontendApplication.class, args);
 	}
 
 	@Bean

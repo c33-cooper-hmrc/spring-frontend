@@ -1,4 +1,4 @@
-package com.cds.cdsfrontend;
+package com.spring.springfrontend;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,5 +12,4 @@ public class CdsFrontendApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }

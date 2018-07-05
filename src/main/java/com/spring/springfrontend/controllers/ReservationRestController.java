@@ -1,7 +1,7 @@
-package com.cds.cdsfrontend.controllers;
+package com.spring.springfrontend.controllers;
 
-import com.cds.cdsfrontend.models.Reservation;
-import com.cds.cdsfrontend.repositories.ReservationRepository;
+import com.spring.springfrontend.models.Reservation;
+import com.spring.springfrontend.repositories.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.Collection;
 public class ReservationRestController {
 
     // External field dependencies to be used in constructor DI.
-    private ReservationRepository reservationRepository;
+    private final ReservationRepository reservationRepository;
 
     @Autowired
     public ReservationRestController(ReservationRepository reservationRepository) {

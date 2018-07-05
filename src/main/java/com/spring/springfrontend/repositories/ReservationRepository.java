@@ -1,6 +1,6 @@
-package com.cds.cdsfrontend.repositories;
+package com.spring.springfrontend.repositories;
 
-import com.cds.cdsfrontend.models.Reservation;
+import com.spring.springfrontend.models.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;

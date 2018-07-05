@@ -1,4 +1,4 @@
-package com.cds.cdsfrontend.models;
+package com.spring.springfrontend.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
