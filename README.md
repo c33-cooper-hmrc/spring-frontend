@@ -7,14 +7,14 @@ A spring boot frontend with Java 8 and thymeleaf templating.
 ## Start local host server
 Note: Execute packaged snapshot from applications target dir.
 
-### Dev profile
+### Dev
 ``` java -Dspring.profiles.active=dev -jar spring-frontend-0.0.1-SNAPSHOT.jar ```
 
-### QA profile
+### QA
 ``` java -Dspring.profiles.active=qa -jar spring-frontend-0.0.1-SNAPSHOT.jar ```
 
-### Staging profile
+### Staging
 ``` java -Dspring.profiles.active=staging -jar spring-frontend-0.0.1-SNAPSHOT.jar ```
 
-### Prod profile
+### Prod
 ``` java -Dspring.profiles.active=prod -jar spring-frontend-0.0.1-SNAPSHOT.jar ```
