@@ -9,9 +9,6 @@ public class ConfigSkeleton {
     @Autowired
     protected Environment environment;
 
-    @Value("${spring.application.name}")
-    protected String appName;
-
     @Value("${spring.profiles.active}")
     protected String activeProfile;
 
