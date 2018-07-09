@@ -18,3 +18,7 @@ Note: Execute packaged snapshot from applications target dir.
 
 ### Prod
 ``` java -Dspring.profiles.active=prod -jar spring-frontend-0.0.1-SNAPSHOT.jar ```
+
+## Authenticate user
+Access login end-point in browser ```http://localhost:8080/login``` to see demonstration of
+form validation with error handling.
