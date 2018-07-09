@@ -12,6 +12,9 @@ public class ConfigSkeleton {
     @Value("${spring.profiles.active}")
     protected String activeProfile;
 
+    public ConfigSkeleton() {
+    }
+
     // Default constructor
     public ConfigSkeleton(Environment environment) {
         this.environment = environment;
