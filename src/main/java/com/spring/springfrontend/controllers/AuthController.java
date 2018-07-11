@@ -4,6 +4,7 @@ import com.spring.springfrontend.config.AppConfig;
 import com.spring.springfrontend.config.ServicesConfig;
 import com.spring.springfrontend.connectors.AuthConnector;
 import com.spring.springfrontend.models.forms.LoginForm;
+import com.spring.springfrontend.utils.ConfigUtils;
 import com.spring.springfrontend.utils.LoggerUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,13 +24,15 @@ public class AuthController {
     // This classes field dependencies to be used in constructor DI
     private final AppConfig appConfig;
     private final ServicesConfig servicesConfig;
+    private final ConfigUtils configUtils;
     private final LoggerUtils loggerUtils;
     private final AuthConnector authConnector;
 
     @Autowired
-    public AuthController(AppConfig appConfig, ServicesConfig servicesConfig, LoggerUtils loggerUtils, AuthConnector authConnector) {
+    public AuthController(AppConfig appConfig, ServicesConfig servicesConfig, ConfigUtils configUtils, LoggerUtils loggerUtils, AuthConnector authConnector) {
         this.appConfig = appConfig;
         this.servicesConfig = servicesConfig;
+        this.configUtils = configUtils;
         this.loggerUtils = loggerUtils;
         this.authConnector = authConnector;
         loggerUtils.setLogger(AuthController.class);
@@ -38,8 +41,6 @@ public class AuthController {
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login (Model model, LoginForm loginForm) {
         model.addAttribute("appName", this.appConfig.getAppName());
-
-        loggerUtils.getLogger().info("Auth URI => " + authConnector.getAuthURI());
 
         return "login";
     }

@@ -1,4 +1,4 @@
-package com.spring.springfrontend.utils.lambdas.functionalInterfaces;
+package com.spring.springfrontend.utils.lambdaExamples.functionalInterfaces;
 
 @FunctionalInterface
 public interface OddOrEven {

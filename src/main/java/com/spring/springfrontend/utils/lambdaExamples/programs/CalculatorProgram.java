@@ -1,6 +1,6 @@
-package com.spring.springfrontend.utils.lambdas.programs;
+package com.spring.springfrontend.utils.lambdaExamples.programs;
 
-import com.spring.springfrontend.utils.lambdas.CalculatorLambdaExamples;
+import com.spring.springfrontend.utils.lambdaExamples.models.CalculatorLambdaExamples;
 
 import java.util.Scanner;
 
@@ -62,7 +62,7 @@ public class CalculatorProgram {
                     break;
 
                 default:
-                    System.out.println("\nUnknown calculator function terminating program...");
+                    System.out.println("\nUnknown calculator function, terminating program...");
                     System.exit(0);
                     break;
             }

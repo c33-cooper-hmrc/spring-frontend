@@ -1,7 +1,7 @@
-package com.spring.springfrontend.utils.lambdas;
+package com.spring.springfrontend.utils.lambdaExamples.models;
 
-import com.spring.springfrontend.utils.lambdas.functionalInterfaces.Calculator;
-import com.spring.springfrontend.utils.lambdas.functionalInterfaces.OddOrEven;
+import com.spring.springfrontend.utils.lambdaExamples.functionalInterfaces.Calculator;
+import com.spring.springfrontend.utils.lambdaExamples.functionalInterfaces.OddOrEven;
 
 public class CalculatorLambdaExamples {
 
